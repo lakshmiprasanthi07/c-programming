@@ -4,10 +4,10 @@ int main() {
     scanf("%d %d",&a,&b);
     if(a>b){
 
-    printf("%d is greater",a);
+    printf("a is greater");
     }
     else {
-        printf("%d is greater",b);
+        printf("b is greater");
     }
     return 0;
 }
