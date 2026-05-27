@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+void main() {
+    char str[30];
+    int vow = 0, cons = 0, i = 0;
+    printf("Enter the string: ");
+    gets(str);
+    strupr(str);
+    printf("Uppercase String = %s\n", str);
+    while(str[i] != '\0')
+    {
+    if(str[i] >= 'A')
+    {
+    if(str[i] == 'a')
+    cons++;
+    else
+    vow++;
+    }
+    i++;
+    }
+    printf("Number of vowels = %d\n", vow);
+    printf("Number of consonants = %d\n", cons);
+}
